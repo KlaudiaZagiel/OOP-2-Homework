@@ -27,7 +27,7 @@ public class Warrior extends Character
     }
 
     @Override
-    public void useSpecialAbility()  //increase attackdamage by 10 after 4 attacks
+    public void useSpecialAbility()  //increase attackdamage by 15 after 4 attacks
     {
         System.out.println("More damage: " + (getAttackDamage() + 15));
     }

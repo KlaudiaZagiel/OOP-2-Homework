@@ -4,7 +4,6 @@ public abstract class Character
 {
     private int attackDamage;      //warrior, mage, archer cannot access this field directly so we need a getter
     private int defense;
-    private int attackCount = 0;  //new character has 0 attacks on count
     private int health;
 
     protected Character(int attackDamage, int defense, int health)
