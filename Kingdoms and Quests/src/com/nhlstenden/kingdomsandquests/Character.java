@@ -5,12 +5,13 @@ public abstract class Character
     private int attackDamage;      //warrior, mage, archer cannot access this field directly so we need a getter
     private int defense;
     private int attackCount = 0;  //new character has 0 attacks on count
-    private int defenseCount = 0;
+    private int health;
 
-    protected Character(int attackDamage, int defense)
+    protected Character(int attackDamage, int defense, int health)
     {
         this.attackDamage = attackDamage;
         this.defense = defense;
+        this.health = health;
     }
 
     public void attack()
@@ -39,6 +40,11 @@ public abstract class Character
     protected int getAttackDamage()
     {
         return this.attackDamage;
+    }
+
+    protected int getHealth()
+    {
+        return this.health;
     }
 
     protected int getDefense()

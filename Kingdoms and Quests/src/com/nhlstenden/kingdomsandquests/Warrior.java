@@ -2,9 +2,9 @@ package com.nhlstenden.kingdomsandquests;
 
 public class Warrior extends Character
 {
-    public Warrior(int attackDamage, int defense)
+    public Warrior(int attackDamage, int defense, int health)
     {
-        super(attackDamage, defense);
+        super(attackDamage, defense, health);
     }
 
     @Override
