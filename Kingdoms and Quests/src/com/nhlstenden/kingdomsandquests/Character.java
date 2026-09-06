@@ -16,18 +16,7 @@ public abstract class Character
 
     public void attack()
     {
-        attackCount++;
-
-        if (attackCount == 4)
-        {
-            useSpecialAbility();
-
-            attackCount = 0; //reset attack count after 4 attacks
-        }
-        else
-        {
-            System.out.println("attacking" + attackDamage);
-        }
+        System.out.println("attacking" + attackDamage);
     }
 
     public void defend() //these are not abstract methods because we assume that attack and defense works the same for every character

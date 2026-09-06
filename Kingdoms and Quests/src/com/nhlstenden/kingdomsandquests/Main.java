@@ -15,5 +15,9 @@ public class Main
         Mage mage = new Mage(30, 10, 20);
 
         mage.defend();
+
+        Archer archer = new Archer(35, 8, 35);
+
+        archer.attack();
     }
 }
