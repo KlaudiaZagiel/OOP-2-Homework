@@ -10,10 +10,8 @@ public class UserValidator
 
     public UserValidator(List<Validation> validations, UserStorage userStorage)
     {
-        this.validations = validations;
-        this.userStorage = userStorage;
-
-        this.validations = new ArrayList<>();
+        this.setValidations(validations);
+        this.setUserStorage(userStorage);
     }
 
     public List<Validation> getValidations()
@@ -61,7 +59,7 @@ public class UserValidator
             throw new IllegalArgumentException("user cannot be null");
         }
 
-        for (Validation validation : this.validations)
+        for (Validation validation : this.getValidations())
         {
             if (!validation.validateUser(user))
             {
@@ -69,7 +67,7 @@ public class UserValidator
             }
         }
 
-        this.userStorage.addUser(user); //store validated user
+        this.getUserStorage().addUser(user); //store validated user
         return true;
     }
 
@@ -80,6 +78,6 @@ public class UserValidator
             throw new IllegalArgumentException("validation cannot be null");
         }
 
-        this.validations.add(validation);
+        this.getValidations().add(validation);
     }
 }

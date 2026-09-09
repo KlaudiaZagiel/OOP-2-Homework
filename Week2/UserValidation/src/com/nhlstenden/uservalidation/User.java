@@ -11,10 +11,10 @@ public class User
 
     public User(String name, String password, String email, LocalDate dateOfBirth)
     {
-        this.name = name;
-        this.password = password;
-        this.email = email;
-        this.dateOfBirth = dateOfBirth;
+        this.setName(name);
+        this.setPassword(password);
+        this.setEmail(email);
+        this.setDateOfBirth(dateOfBirth);
     }
 
     public String getName()

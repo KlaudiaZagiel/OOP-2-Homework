@@ -9,7 +9,7 @@ public class EmailValidation implements Validation
     @Override
     public boolean validateUser(User user)
     {
-        //email must contain @ and a . after @
+        //email must contain @ and .
 
         String email = user.getEmail();
 

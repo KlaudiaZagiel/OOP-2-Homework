@@ -9,6 +9,11 @@ public class AgeValidation implements Validation
 
     public AgeValidation(int minAge)
     {
+        if (minAge < 0)
+        {
+            throw new IllegalArgumentException("minAge cannot be negative");
+        }
+
         this.minAge = minAge;
     }
 
