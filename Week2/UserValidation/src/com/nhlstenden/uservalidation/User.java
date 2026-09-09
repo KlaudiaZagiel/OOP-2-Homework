@@ -6,6 +6,7 @@ public class User
 {
     private String name;
     private String password;
+    private String email;
     private LocalDate dateOfBirth;
 
     public User(String name, String password, LocalDate dateOfBirth)
@@ -58,5 +59,20 @@ public class User
         }
 
         this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getEmail()
+    {
+        return this.email;
+    }
+
+    public void setEmail(String email)
+    {
+        if (email == null || email.isBlank())
+        {
+            throw new IllegalArgumentException("email cannot be null or blank");
+        }
+
+        this.email = email;
     }
 }
