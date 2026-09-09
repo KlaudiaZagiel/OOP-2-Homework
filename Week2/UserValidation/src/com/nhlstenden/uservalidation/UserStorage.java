@@ -14,7 +14,7 @@ public class UserStorage
 
     public List<User> getUsers()
     {
-        return users;
+        return this.users;
     }
 
     public void setUsers(List<User> users)
