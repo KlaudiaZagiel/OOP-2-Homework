@@ -14,7 +14,6 @@ public class UserValidator
         this.userStorage = userStorage;
 
         this.validations = new ArrayList<>();
-        this.userStorage = new UserStorage();
     }
 
     public List<Validation> getValidations()

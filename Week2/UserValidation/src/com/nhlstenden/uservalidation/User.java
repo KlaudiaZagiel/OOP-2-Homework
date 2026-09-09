@@ -9,10 +9,11 @@ public class User
     private String email;
     private LocalDate dateOfBirth;
 
-    public User(String name, String password, LocalDate dateOfBirth)
+    public User(String name, String password, String email, LocalDate dateOfBirth)
     {
         this.name = name;
         this.password = password;
+        this.email = email;
         this.dateOfBirth = dateOfBirth;
     }
 
