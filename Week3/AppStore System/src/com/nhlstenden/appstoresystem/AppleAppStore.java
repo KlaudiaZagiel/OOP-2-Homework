@@ -10,7 +10,7 @@ public class AppleAppStore extends AppStore
     @Override
     public void uploadApp(App app)
     {
-        if (app.containsNudity() && app != null)
+        if (app != null && app.containsNudity())
         {
             throw new IllegalArgumentException("app cannot be uploaded becasue it contains nudity");
         }
